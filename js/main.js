@@ -1,5 +1,6 @@
 $( document ).ready(function() {
     console.log("here we go");
+    $("#header").sticky({ topSpacing: 0 });
 });
 
 // function to toggle on/off item (should be a string)

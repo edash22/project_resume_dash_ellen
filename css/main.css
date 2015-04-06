@@ -94,6 +94,7 @@ h2 {
 header {
     width: 100%;
     background: #ddd0be url(../img/fabric_plaid-tan.png) repeat-x;
+    z-index: 100;
 }
 
 header p {
