@@ -48,11 +48,75 @@ body {
     clear: both;
 }
 
+.shadow {
+    -webkit-box-shadow: 0px 5px 10px 3px rgba(0,0,0,0.44);
+    -moz-box-shadow: 0px 5px 10px 3px rgba(0,0,0,0.44);
+    box-shadow: 0px 5px 10px 3px rgba(0,0,0,0.44);
+}
+
 /**========================================================
     ?? - HEADER 
 ========================================================**/
 
 header {
     width: 100%;
-    background: #ddd0be;
+    background: #ddd0be url(../img/fabric_plaid-tan.png) repeat-x;
+}
+
+header p {
+    padding: 3px;
+    margin: 1px;
+}
+
+.name {
+    color: #7da398;
+    font-family: 'Lobster Two', cursive;
+    font-size: 28px;
+    text-align: center;
+    width: 100%;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+
+}
+
+.title {
+    color: #67655e;
+    font-family: 'Lobster Two', cursive;
+    font-size: 16px;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    padding: 0 0 5px 0;
+}
+
+#header-primary {
+    width: 100%;
+    display: inline-block;
+}
+
+#header-secondary {
+    width: 50%;
+    text-align: right;
+    display: none;
+}
+
+/**========================================================
+    ?? - MEDIA QUERIES 
+========================================================**/
+
+@media only screen and (min-width: 800px) {
+    #header-secondary {
+        display: inline-block;
+    }
+
+    #header-primary {
+        width: 48%;
+        text-align: left;
+    }
+
+    .name, .title {
+        text-align: left;
+        padding-left: 10px;
+    }
+
 }
