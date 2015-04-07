@@ -1,5 +1,5 @@
 $( document ).ready(function() {
-    $("#header").sticky({ topSpacing: 0 });
+    $("header").sticky({ topSpacing: 0 });
     $('.tooltip').tooltipster({
         position: 'right'
     });
@@ -97,7 +97,7 @@ function adjustNavAreaHeight () {
     $('#navigation').height('auto');
 
     // make nav height bigger if content section is bigger
-    var contentHeight = $('#content').height();
+    var contentHeight = $('main').height();
     var navHeight = $('#navigation').height();
     if (navHeight < contentHeight) {
         $('#navigation').height(contentHeight);
