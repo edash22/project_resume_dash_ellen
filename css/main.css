@@ -258,18 +258,31 @@ figure {
     margin: 4px 0;
     font-weight: bold;
     color: #49675e;
-    padding-left: 4px;
 }
 
 .subsubtitle {
     margin: 4px 0;
     font-style: italic;
     color: #49675e;
-    padding-left: 4px;
 }
 
 .description {
     margin: 10px 0;
+}
+
+/* skills */
+.skill-title {
+    margin: 4px 0;
+    font-weight: bold;
+    color: #49675e;
+    display: inline-block;
+    width: 100%;
+}
+
+.skill-desc {
+    margin: 10px 0;
+    display: inline-block;
+    width: 100%;
 }
 
 
@@ -342,6 +355,16 @@ footer p {
         width: 35%;
         max-width: 220px;
         float: right;
+    }
+
+    .skill-title {
+        width: 25%;
+        vertical-align: top;
+    }
+
+    .skill-desc {
+        width: 70%;
+        margin-top: 4px;
     }
 
 }

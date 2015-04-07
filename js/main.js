@@ -1,6 +1,7 @@
 $( document ).ready(function() {
     console.log("here we go");
     $("#header").sticky({ topSpacing: 0 });
+    adjustNavAreaHeight();
 });
 
 // function to toggle on/off item (should be a string)
@@ -100,6 +101,9 @@ function adjustNavAreaHeight () {
     if (navHeight < contentHeight) {
         $('#navigation').height(contentHeight);
     }
+    // adjust copyright padding-left so that it aligns with content area
+    var newPadding = $('#navigation').width() + 6;
+    $('#copyright').css("padding-left", newPadding + "px");
 }
 
 /******************************
