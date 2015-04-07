@@ -40,14 +40,6 @@ body {
     background-color: #fff;
 }
 
-/* clearfix from: http://css-tricks.com/snippets/css/clear-fix/ 
-   Good for IE8 and above */
-.clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
 .clear-left {
     clear: left;
 }
@@ -62,22 +54,6 @@ h2 {
 
 .inline {
     display: inline-block;
-}
-
-.extra-margin-bottom {
-    margin-bottom: 1rem;
-}
-
-.extra-margin-top {
-    margin-top: 1.1rem;
-}
-
-.extra-margin-left {
-    margin-left: 1rem;
-}
-
-.thin-border {
-    border: 1px solid #222;
 }
 
 .shadow {
@@ -171,10 +147,6 @@ nav {
 .nav-icon {
     width: 40px;
     text-align: center;
-}
-
-.nav-text {
-    padding-right: 5px;
 }
 
 nav ul {

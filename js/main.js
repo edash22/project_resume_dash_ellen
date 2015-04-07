@@ -1,5 +1,4 @@
 $( document ).ready(function() {
-    console.log("here we go");
     $("#header").sticky({ topSpacing: 0 });
     adjustNavAreaHeight();
 });
@@ -53,7 +52,6 @@ function adjustNavIcons (selectedItem) {
             sectionPosY = Math.floor(navSection.position().top);
             
             var positionDiff = sectionPosY - iconPosY;
-            //console.log(navSection.id + " iconPosY");
             
             // now determine appropriate padding value
             if (positionDiff == 0) {
