@@ -253,10 +253,17 @@ figure {
     text-align: center;
 }
 
-/* Experience */
+/* Experience and Education */
 .subtitle {
     margin: 4px 0;
     font-weight: bold;
+    color: #49675e;
+    padding-left: 4px;
+}
+
+.subsubtitle {
+    margin: 4px 0;
+    font-style: italic;
     color: #49675e;
     padding-left: 4px;
 }
