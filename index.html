@@ -9,13 +9,17 @@
     <meta name="author" content="Ellen Dash">
 
     <link rel="stylesheet" href="css/vendor/normalize.min.css">
-    <link rel="stylesheet" href="css/main.css">
-
+    
     <!-- TODO - use this later; slows down development for now
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     -->
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link href='http://fonts.googleapis.com/css?family=Lobster+Two:400,700' rel='stylesheet' type='text/css'>
+
+    <!-- tooltip jQuery plugin: http://iamceege.github.io/tooltipster/  -->
+    <link rel="stylesheet" type="text/css" href="css/tooltipster.css" /> 
+
+    <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
@@ -36,27 +40,27 @@
         <div class="resume shadow">
             <nav id="navigation">
                 <ul class="nav-menu">
-                    <li title="introduction" id="introduction">
+                    <li title="show/hide introduction" id="introduction" class="tooltip">
                         <a href="#" onclick="toggleVisibility('#introduction-desc');">
                             <span class="nav-icon fa fa-lg fa-user"></span>
                         </a>
                     </li>
-                    <li title="work experience" id="experience">
+                    <li title="show/hide work experience" id="experience" class="tooltip">
                         <a href="#" onclick="toggleVisibility('#experience-desc');">
                             <span class="nav-icon fa fa-lg fa-file-text-o"></span>
                         </a>
                     </li>
-                    <li title="education" id="education">
+                    <li title="show/hide education" id="education" class="tooltip">
                         <a href="#" onclick="toggleVisibility('#education-desc');">
                             <span class="nav-icon fa fa-lg fa-graduation-cap"></span>
                         </a>
                     </li>
-                    <li title="skills" id="skills">
+                    <li title="show/hide skills" id="skills" class="tooltip">
                         <a href="#" onclick="toggleVisibility('#skills-desc');">
                             <span class="nav-icon fa fa-lg fa-diamond"></span>
                         </a>
                     </li>
-                    <li title="publications" id="publications">
+                    <li title="show/hide publications" id="publications" class="tooltip">
                         <a href="#" onclick="toggleVisibility('#publications-desc');">
                             <span class="nav-icon fa fa-lg fa-book"></span>
                         </a>
@@ -246,6 +250,9 @@
 
     <!-- plugin from: http://stickyjs.com/ -->
     <script type="text/javascript" src="js/jquery.sticky.js"></script>
+    <!-- tooltip jquery plugin from: http://iamceege.github.io/tooltipster/ -->
+    <script type="text/javascript" src="js/jquery.tooltipster.min.js"></script>
+
     <script src="js/main.js"></script>
 </body>
 </html>

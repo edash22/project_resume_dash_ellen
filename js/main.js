@@ -1,5 +1,8 @@
 $( document ).ready(function() {
     $("#header").sticky({ topSpacing: 0 });
+    $('.tooltip').tooltipster({
+        position: 'right'
+    });
     adjustNavAreaHeight();
 });
 
