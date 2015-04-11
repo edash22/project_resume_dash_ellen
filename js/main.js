@@ -42,6 +42,7 @@ function adjustNavIcons (selectedItem) {
         // Developer note ... need to set navIcon in order to use it to get the position.
         // Not quite sure why, but this does not work:
         //    iconPosY = navIcons[i].position().top;
+        //    iconPosY = navIcons.eq(i).position().top;
         // navIcons[i] is not the same object as navIcon
 
         if (navSection.is(':visible')) {
