@@ -16,17 +16,10 @@ function toggleVisibility(item) {
     chosen.toggle({
         duration: 600,
         easing: 'swing', // 'swing' is the default, so it doesn't need to be set
+        complete: function() {
+            adjustNavIcons(item);
+        }
     });
-
-    // Developer note:
-    // Tried using code below, which is supposed to call the function after the animation completes
-    //       chosen.toggle(600, 'swing', adjustNavIcons(item));
-    // but, I don't believe it is working properly. Using a timeout for now.
-
-    // wait for toggle to finish, then reposition navigation icons
-    setTimeout(function() {
-        adjustNavIcons(item);
-    }, 650);
 }
 
 // lines up navigation icons with associated section (if displayed)
