@@ -12,7 +12,12 @@ function toggleVisibility(item) {
     var chosen = $(item);
 
     // toggle the text area with mild animation
-    chosen.toggle(600, 'swing');
+    // chosen.toggle(600, 'swing');
+    chosen.toggle({
+        duration: 600,
+        easing: 'swing', // 'swing' is the default, so it doesn't need to be set
+    });
+
     // Developer note:
     // Tried using code below, which is supposed to call the function after the animation completes
     //       chosen.toggle(600, 'swing', adjustNavIcons(item));
