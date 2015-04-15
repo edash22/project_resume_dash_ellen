@@ -9,7 +9,7 @@
     - tbd
 
     CONTENTS
-        1 - GENERAL 
+        1 - GENERAL
         2 - HEADER
         3 - ANCHOR
         4 - NAVIGATION
@@ -20,7 +20,7 @@
 ========================================================**/
 
 /**========================================================
-    1 - GENERAL 
+    1 - GENERAL
 ========================================================**/
 
 body {
@@ -67,7 +67,7 @@ h2 {
 }
 
 /**========================================================
-    2 - HEADER 
+    2 - HEADER
 ========================================================**/
 
 header {
@@ -114,7 +114,7 @@ header p {
 }
 
 /**========================================================
-    3 - ANCHOR 
+    3 - ANCHOR
 ========================================================**/
 
 a, a:focus, a:visited, a:active {
@@ -129,11 +129,11 @@ a:hover {
  border: none;
 }
 /**========================================================
-    4 - NAVIGATION 
+    4 - NAVIGATION
 ========================================================**/
 
 nav {
-    display: inline-block; 
+    display: inline-block;
     margin: 0px;
     background: #67655e;
     width: 17%;
@@ -159,7 +159,7 @@ nav a, nav a:hover, nav a:focus, nav a:visited {
 
 nav a {
     text-decoration: none;
-    background-color: #7da398; 
+    background-color: #7da398;
     vertical-align: middle;
     line-height: 30px;
     display: inline-block;
@@ -169,7 +169,7 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #49675e; 
+    background-color: #49675e;
 }
 
 nav li {
@@ -177,11 +177,11 @@ nav li {
 }
 
 nav li a span:hover {
-    cursor: pointer; 
+    cursor: pointer;
 }
 
 /**========================================================
-    5 - CONTENT 
+    5 - CONTENT
 ========================================================**/
 
 .resume {
@@ -258,7 +258,7 @@ figure {
 
 
 /**========================================================
-    6 - FOOTER 
+    6 - FOOTER
 ========================================================**/
 
 footer {
@@ -272,7 +272,7 @@ footer p {
 }
 
 /**========================================================
-    7 - MEDIA QUERIES 
+    7 - MEDIA QUERIES
 ========================================================**/
 
 @media only screen and (min-width: 500px) {

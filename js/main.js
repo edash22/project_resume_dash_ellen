@@ -8,20 +8,18 @@ $( document ).ready(function() {
 
 // function to toggle on/off item (should be a string)
 function toggleVisibility(item) {
-    // get the item's classes ... 
+    // get the item's classes ...
     var chosen = $(item);
 
-    // toggle the text area with mild animation 
-    chosen.toggle(600, 'swing');
-    // Developer note:
-    // Tried using code below, which is supposed to call the function after the animation completes
-    //       chosen.toggle(600, 'swing', adjustNavIcons(item));
-    // but, I don't believe it is working properly. Using a timeout for now. 
-
-    // wait for toggle to finish, then reposition navigation icons
-    setTimeout(function() {
-        adjustNavIcons(item);
-    }, 650);
+    // toggle the text area with mild animation
+    // chosen.toggle(600, 'swing');
+    chosen.toggle({
+        duration: 600,
+        easing: 'swing', // 'swing' is the default, so it doesn't need to be set
+        complete: function() {
+            adjustNavIcons(item);
+        }
+    });
 }
 
 // lines up navigation icons with associated section (if displayed)
@@ -44,7 +42,8 @@ function adjustNavIcons (selectedItem) {
         // Developer note ... need to set navIcon in order to use it to get the position.
         // Not quite sure why, but this does not work:
         //    iconPosY = navIcons[i].position().top;
-        // navIcons[i] is not the same object as navIcon      
+        //    iconPosY = navIcons.eq(i).position().top;
+        // navIcons[i] is not the same object as navIcon
 
         if (navSection.is(':visible')) {
             // get the current padding-top of icon
@@ -53,9 +52,9 @@ function adjustNavIcons (selectedItem) {
             // determine the Y position of the icon and the Y Position of the corresponding section
             iconPosY = Math.floor(navIcon.position().top + iconCurrPadding);
             sectionPosY = Math.floor(navSection.position().top);
-            
+
             var positionDiff = sectionPosY - iconPosY;
-            
+
             // now determine appropriate padding value
             if (positionDiff == 0) {
                 // keep the current padding
@@ -80,7 +79,7 @@ function adjustNavIcons (selectedItem) {
     adjustNavAreaHeight();
 
     // auto scroll to selected area if now visible
-    // from resource: http://www.robertprice.co.uk/robblog/2013/02/using-jquery-to-scroll-to-an-element/ 
+    // from resource: http://www.robertprice.co.uk/robblog/2013/02/using-jquery-to-scroll-to-an-element/
     // Note: the "- 80" is to allow for the sticky header
     var chosen = $(selectedItem);
     if (chosen.is(':visible')) {
